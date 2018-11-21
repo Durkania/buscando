@@ -9,18 +9,17 @@
   <link type="text/css" rel="stylesheet" href="css/ion.rangeSlider.skinFlat.css"  media="screen,projection"/>
   <link type="text/css" rel="stylesheet" href="css/index.css"  media="screen,projection"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Formulario</title>
+  <title>Buscador de bienes raices | Backend</title>
 </head>
-
 <body>
-  <video src="img/video.mp4" id="vidFondo"></video>
+  <video src="play.mp4" id="vidFondo"></video>
 
   <div class="contenedor">
     <div class="card rowTitulo">
       <h1>Buscador</h1>
     </div>
     <div class="colFiltros">
-      <form action="buscador.php" method="post" id="formulario">
+      <form  id="formulario">
         <div class="filtrosContenido">
           <div class="tituloFiltros">
             <h5>Realiza una búsqueda personalizada</h5>
@@ -29,12 +28,21 @@
             <label for="selectCiudad">Ciudad:</label>
             <select name="ciudad" id="selectCiudad">
               <option value="" selected>Elige una ciudad</option>
+              <option value="New York" >New York</option>
+              <option value="Miami" >Miami</option>
+              <option value="Orlando" >Orlando</option>
+              <option value="Los Angeles" >Los Angeles</option>
+              <option value="Houston" >Houston</option>
+              <option value="Miami" >Washington</option>
             </select>
           </div>
           <div class="filtroTipo input-field">
             <label for="selecTipo">Tipo:</label><br>
             <select name="tipo" id="selectTipo">
               <option value="" selected>Elige un tipo</option>
+              <option value="Casa" >Casa</option>
+              <option value="Casa de Campo" >Casa de campo</option>
+              <option value="Apartamento" >Apartamento</option>
             </select>
           </div>
           <div class="filtroPrecio">
@@ -54,8 +62,8 @@
         <div class="divider"></div>
         <button type="button" name="todos" class="btn-flat waves-effect" id="mostrarTodos">Mostrar Todos</button>
       </div>
-
     </div>
+
   </div>
 
   <script type="text/javascript" src="js/jquery-3.0.0.js"></script>
